@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, rgb(255, 255, 255), rgba(2, 2, 2, 0)), url('https://images.pexels.com/photos/1925536/pexels-photo-1925536.jpeg?cs=srgb&dl=pexels-lil-artsy-1925536.jpg&fm=jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    color: #ccc;
+  }
+    .portfolio-content {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .portfolio-item {
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Added CSS for styling sections */
+    .section {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      margin: 5px 0;
+    }
+
+    .card {
+      width: 500px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .card p {
+      margin: 5px 0;
+    }
+
+  </style>
+   <%- include('../partials/head'); %>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/uniquepage">Unique Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="portfolio-content">
+    <h2 class="animate__animated animate__bounce" style=" font-size:45px;  color: #472f17; font-weight: 30px;">Projects</h2>
+    <section class="section">
+      <div class="portfolio-item">
+        <img width=400 height=400 src="https://i.imgflip.com/7e5c08.gif" alt="Portfolio Item 1">
+        <p>Tic tac toe website</p>
+      </div>
+      <div class="portfolio-item">
+        <img width=400 height=400 src="https://i.pinimg.com/originals/d4/81/f3/d481f3c72e283309071f79e01b05c06d.gif" alt="Portfolio Item 2">
+        <p>Shegels Pummelo Information Systems</p>
+      </div>
+      <div class="portfolio-item">
+        <img width=400 height=400 src="https://i.gifer.com/7gP8.gif" alt="Portfolio Item 3">
+        <p>Simple calculator</p>
+      </div>
+      <!-- Add more portfolio items as needed -->
+    </section>
+    <h1 style=" font-size:45px;  color: #472f17; font-weight: 30px;">Portfolio</h1>
+    <section class="section">
+      <div class="card">
+        <h2>Education</h2>
+        <p>Elementary to Senior High School</p>
+        <p>Davao Christian High School</p>
+        <p>Graduated at: 2021</p>
+        <div style="padding: 15px;"></div>
+        <p>Bachelor of Science in Information Systems</p>
+        <p>Ateneo de Davao University</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Skills</h2>
+        <p><b>Programming Languages:</b> Proficient in Java, Python, C++, and JavaScript</p>
+        <p><b>Database Management:</b> Experienced in MySQL</p>
+        <p><b>Web Development:</b> Knowledgeable in HTML, CSS, JavaScript</p>
+        <p><b>Project Management:</b> Effective at coordinating and executing Information Technology projects from inception to completion</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Finished Subjects:</h2>
+        <p>Introduction to Computing</p>
+        <p>Computer Programming</p>
+        <p>Computer Programming 2</p>
+        <p>Data Structures and Algorithms</p>
+        <p>Information Management</p>
+        <p>Fundamentals of Information Systems</p>
+        <p>Organization and Management Concepts</p>
+        <p>It Infrastructure and Network Technologies</p>
+        <p>Financial Management</p>
+        <p>Systems Analysis and Design</p>
+        <p>Multi-Platform Application Development</p>
+        <p>Business Process Management</p>
+        <p>Enterprise Architecture</p>
+        <p>Is Project Management</p>
+        <p>Quantitative Methods</p>
+        <p>Software Engineering</p>
+        <p>Technopreneurship 1</p>
+        <p>Android Development</p>
+        <p>CyberSecurity</p>
+        
+      </div>
+    </section>
+    
+    
+
+    <!-- Portfolio section -->
+    
+  </div>
+</body>
+</html>
